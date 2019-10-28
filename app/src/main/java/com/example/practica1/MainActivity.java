@@ -19,8 +19,7 @@ public class MainActivity extends AppCompatActivity {
     boolean nombreVacio=false;
     boolean apellidosVacio=false;
     boolean edadVacio=false;
-    boolean radioVacio=false;
-    boolean spinnerVacio=false;
+    
 
     String nombre;
     String apellidos;
@@ -80,13 +79,7 @@ public class MainActivity extends AppCompatActivity {
             if(radioMujer.isChecked()){
                 genero="Mujer";
             }
-            if(!radioHombre.isChecked()&&!radioMujer.isChecked()){
-                radioVacio=true;
-            }
             String estadoSpinner = spinner.getSelectedItem().toString();
-            if(estadoSpinner.isEmpty()){
-                spinnerVacio=true;
-            }
             if(SwitchHijos.isChecked()){
                 tienehijos="Tiene hijos";
             }else{
