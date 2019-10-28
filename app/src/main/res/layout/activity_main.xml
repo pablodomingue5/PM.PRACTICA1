@@ -63,7 +63,7 @@
         android:layout_marginTop="312dp"
         android:layout_marginEnd="108dp"
         android:layout_marginRight="108dp"
-        android:text="¿Tiene hijos?"
+        android:text="@string/switch1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -81,7 +81,7 @@
     <TextView
         android:id="@+id/textView1"
         android:layout_width="329dp"
-        android:layout_height="30dp"
+        android:layout_height="42dp"
         android:layout_marginTop="440dp"
         android:maxLines="5"
         android:text="Aquí se mostrará el texto"

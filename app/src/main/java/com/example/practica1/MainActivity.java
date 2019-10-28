@@ -46,8 +46,9 @@ public class MainActivity extends AppCompatActivity {
         final RadioButton radioMujer = findViewById(R.id.radioButtonMujer);
         //Parte SPINNER
         final Spinner spinner = (Spinner) findViewById(R.id.spinner);
-        String[] letra = {"Casado", "Separado", "Divorciado", "Otro"};
-        spinner.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, letra));
+        ArrayAdapter adaptadorTipoFichero;
+        adaptadorTipoFichero = ArrayAdapter.createFromResource(this, R.array.spinner2, R.layout.support_simple_spinner_dropdown_item);
+        spinner.setAdapter(adaptadorTipoFichero);
         //Parte Switch
         final Switch SwitchHijos = (Switch) findViewById(R.id.switch1);
         //TextView FINAL
@@ -133,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }else{
                     txtView.setTextColor(Color.BLACK);
-                    mostrarFinal=txtApellidos.getText()+", "+txtNombre.getText()+", Edad = "+txtEdad.getText()+", "+mayoriaedad+","+genero+","+tienehijos+"";
+                    mostrarFinal=txtApellidos.getText()+", "+txtNombre.getText()+", Edad = "+txtEdad.getText()+", "+estadoSpinner+mayoriaedad+", "+genero+", "+tienehijos+"";
                     txtView.setText(mostrarFinal);
                 }
             }
