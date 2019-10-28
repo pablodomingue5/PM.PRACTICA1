@@ -80,11 +80,10 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="412dp"
+        android:layout_height="36dp"
         android:layout_marginTop="440dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginRight="108dp"
+        android:maxLines="5"
         android:text="Aquí se mostrará el texto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
