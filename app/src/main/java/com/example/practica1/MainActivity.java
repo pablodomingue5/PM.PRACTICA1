@@ -136,7 +136,6 @@ public class MainActivity extends AppCompatActivity {
                     mostrarFinal=txtApellidos.getText()+", "+txtNombre.getText()+", Edad = "+txtEdad.getText()+", "+mayoriaedad+","+genero+","+tienehijos+"";
                     txtView.setText(mostrarFinal);
                 }
-              
             }
         });
     }

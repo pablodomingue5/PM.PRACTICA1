@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Practica 1</string>
+    <string name="txtNombre1">Escribe tu nombre</string>
+    <string name="txtApellidos1">Escribe tu apellido</string>
+    <string name="txtEdad1">Escribe tu edad</string>
+    <string name="radioButtonMujer">Mujer</string>
+    <string name="radioButtonHombre">Hombre</string>
+    <string name="spinner">Tabla</string>
+    <string name="switch1">Switch</string>
+    <string name="btngenerartexto">Generar Texto</string>
+    <string name="textView1">Aquí se mostrará el texto</string>
+    <string name="button2">Resetear</string>
 </resources>
