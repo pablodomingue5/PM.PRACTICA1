@@ -55,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
 
         final Button btnBoton1 = (Button) findViewById(R.id.btngenerartexto);
         btnBoton1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
+            public void onClick(View arg0) {
+                nombreVacio=false;
+                apellidosVacio=false;
+                edadVacio=false;
                final EditText txtNombre = (EditText) findViewById(R.id.txtNombre1);
                 System.out.println(txtNombre.getText().toString());
                 if (txtNombre.getText().toString().isEmpty()) {
@@ -91,43 +94,49 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     tienehijos = "No tiene hijos";
                 }
-                if (nombreVacio==true) {
-                    mostrarFinal="El nombre está vacío";
-                    txtView.setTextColor(Color.RED);
-                    txtView.setText(mostrarFinal);
+
+                if(nombreVacio==true||apellidosVacio==true||edadVacio==true) {
+                    if (nombreVacio==true) {
+                        mostrarFinal = "El nombre está vacío";
+                        txtView.setTextColor(Color.RED);
+                        txtView.setText(mostrarFinal);
                     }
-                if (apellidosVacio==true) {
-                    mostrarFinal="El apellido está vacío";
-                    txtView.setTextColor(Color.RED);
-                    txtView.setText(mostrarFinal);}
-                if (edadVacio==true) {
-                    mostrarFinal="La edad está vacía";
-                    txtView.setTextColor(Color.RED);
+                    if (apellidosVacio==true) {
+                        mostrarFinal="El apellido está vacío";
+                        txtView.setTextColor(Color.RED);
+                        txtView.setText(mostrarFinal);
+                    }
+                    if (edadVacio==true) {
+                        mostrarFinal="La edad está vacía";
+                        txtView.setTextColor(Color.RED);
+                        txtView.setText(mostrarFinal);
+                    }
+                    if (nombreVacio==true&&apellidosVacio==true&&edadVacio==true) {
+                        mostrarFinal="El nombre,el apellido y la edad están vacíos";
+                        txtView.setTextColor(Color.RED);
+                        txtView.setText(mostrarFinal);
+                    }
+                    if (nombreVacio==true&&apellidosVacio==true) {
+                        mostrarFinal="El nombre y el apellido están vacíos";
+                        txtView.setTextColor(Color.RED);
+                        txtView.setText(mostrarFinal);
+                    }
+                    if (nombreVacio==true&&edadVacio==true) {
+                        mostrarFinal="El nombre y la edad están vacíos";
+                        txtView.setTextColor(Color.RED);
+                        txtView.setText(mostrarFinal);
+                    }
+                    if (apellidosVacio == true && edadVacio == true) {
+                        mostrarFinal="Los apellidos y la edad están vacíos";
+                        txtView.setTextColor(Color.RED);
+                        txtView.setText(mostrarFinal);
+                    }
+                }else{
+                    txtView.setTextColor(Color.BLACK);
+                    mostrarFinal=txtApellidos.getText()+", "+txtNombre.getText()+", Edad = "+txtEdad.getText()+", "+mayoriaedad+","+genero+","+tienehijos+"";
                     txtView.setText(mostrarFinal);
                 }
-                if(nombreVacio==true&&apellidosVacio==true&&edadVacio==true){
-                    mostrarFinal="El nombre,el apellido y la edad están vacíos";
-                    txtView.setTextColor(Color.RED);
-                    txtView.setText(mostrarFinal);
-                }
-                if(nombreVacio==true&&apellidosVacio==true){
-                    mostrarFinal="El nombre y el apellido están vacíos";
-                    txtView.setTextColor(Color.RED);
-                    txtView.setText(mostrarFinal);
-                }
-                if(nombreVacio==true&&edadVacio==true){
-                    mostrarFinal="El nombre y la edad están vacíos";
-                    txtView.setTextColor(Color.RED);
-                    txtView.setText(mostrarFinal);
-                }
-                if(apellidosVacio==true&&edadVacio==true){
-                    mostrarFinal="Los apellidos y la edad están vacíos";
-                    txtView.setTextColor(Color.RED);
-                    txtView.setText(mostrarFinal);
-                }
-                if(nombreVacio==false&&apellidosVacio==false&&edadVacio==false){
-                    txtView.setText(txtApellidos.getText()+", "+txtNombre.getText()+", Edad = "+txtEdad.getText()+", "+mayoriaedad+","+genero+","+tienehijos+"");
-                }
+              
             }
         });
     }
