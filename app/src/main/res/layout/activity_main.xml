@@ -101,6 +101,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
+        android:id="@+id/radioButtonGroup1"
         android:layout_width="198dp"
         android:layout_height="61dp"
         android:layout_marginTop="160dp"
@@ -110,13 +111,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioButtonHombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hombre" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButtonMujer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mujer" />
