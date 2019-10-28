@@ -17,9 +17,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    boolean nombreVacio=false;
-    boolean apellidosVacio=false;
-    boolean edadVacio=false;
+    boolean nombreVacio = false;
+    boolean apellidosVacio = false;
+    boolean edadVacio = false;
 
 
     String nombre;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     int edad;
     String genero;
     String tienehijos;
-    String mostrarFinal="";
+    String mostrarFinal = "";
     String mayoriaedad = "";
 
     @Override
@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Parte de los EditText
-       // final EditText txtNombre = (EditText) findViewById(R.id.txtNombre1);
+        final EditText txtNombre = (EditText) findViewById(R.id.txtNombre1);
         final EditText txtApellidos = (EditText) findViewById(R.id.txtApellidos1);
         final EditText txtEdad = (EditText) findViewById(R.id.txtEdad1);
-       // Editable nombrefinal = txtNombre.getText();
+        // Editable nombrefinal = txtNombre.getText();
         //Parte de RadioButtons
         final RadioButton radioHombre = findViewById(R.id.radioButtonHombre);
         final RadioButton radioMujer = findViewById(R.id.radioButtonMujer);
@@ -57,20 +57,19 @@ public class MainActivity extends AppCompatActivity {
         final Button btnBoton1 = (Button) findViewById(R.id.btngenerartexto);
         btnBoton1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
-                nombreVacio=false;
-                apellidosVacio=false;
-                edadVacio=false;
-               final EditText txtNombre = (EditText) findViewById(R.id.txtNombre1);
-                System.out.println(txtNombre.getText().toString());
+                nombreVacio = false;
+                apellidosVacio = false;
+                edadVacio = false;
+
                 if (txtNombre.getText().toString().isEmpty()) {
-                    nombreVacio=true;
+                    nombreVacio = true;
                 } else {
-                    nombre=txtNombre.getText().toString();
+                    nombre = txtNombre.getText().toString();
                 }
                 if (txtApellidos.getText().toString().isEmpty()) {
-                    apellidosVacio=true;
+                    apellidosVacio = true;
                 } else {
-                    apellidos=txtApellidos.getText().toString();
+                    apellidos = txtApellidos.getText().toString();
                 }
                 try {
                     edad = Integer.parseInt(txtEdad.getText().toString());
@@ -96,52 +95,65 @@ public class MainActivity extends AppCompatActivity {
                     tienehijos = "No tiene hijos";
                 }
 
-                if(nombreVacio==true||apellidosVacio==true||edadVacio==true) {
-                    if (nombreVacio==true) {
+                if (nombreVacio == true || apellidosVacio == true || edadVacio == true) {
+                    if (nombreVacio == true) {
                         mostrarFinal = "El nombre está vacío";
                         txtView.setTextColor(Color.RED);
                         txtView.setText(mostrarFinal);
                     }
-                    if (apellidosVacio==true) {
-                        mostrarFinal="El apellido está vacío";
+                    if (apellidosVacio == true) {
+                        mostrarFinal = "El apellido está vacío";
                         txtView.setTextColor(Color.RED);
                         txtView.setText(mostrarFinal);
                     }
-                    if (edadVacio==true) {
-                        mostrarFinal="La edad está vacía";
+                    if (edadVacio == true) {
+                        mostrarFinal = "La edad está vacía";
                         txtView.setTextColor(Color.RED);
                         txtView.setText(mostrarFinal);
                     }
-                    if (nombreVacio==true&&apellidosVacio==true&&edadVacio==true) {
-                        mostrarFinal="El nombre,el apellido y la edad están vacíos";
+                    if (nombreVacio == true && apellidosVacio == true && edadVacio == true) {
+                        mostrarFinal = "El nombre,el apellido y la edad están vacíos";
                         txtView.setTextColor(Color.RED);
                         txtView.setText(mostrarFinal);
                     }
-                    if (nombreVacio==true&&apellidosVacio==true) {
-                        mostrarFinal="El nombre y el apellido están vacíos";
+                    if (nombreVacio == true && apellidosVacio == true) {
+                        mostrarFinal = "El nombre y el apellido están vacíos";
                         txtView.setTextColor(Color.RED);
                         txtView.setText(mostrarFinal);
                     }
-                    if (nombreVacio==true&&edadVacio==true) {
-                        mostrarFinal="El nombre y la edad están vacíos";
+                    if (nombreVacio == true && edadVacio == true) {
+                        mostrarFinal = "El nombre y la edad están vacíos";
                         txtView.setTextColor(Color.RED);
                         txtView.setText(mostrarFinal);
                     }
                     if (apellidosVacio == true && edadVacio == true) {
-                        mostrarFinal="Los apellidos y la edad están vacíos";
+                        mostrarFinal = "Los apellidos y la edad están vacíos";
                         txtView.setTextColor(Color.RED);
                         txtView.setText(mostrarFinal);
                     }
-                }else{
+                } else {
                     txtView.setTextColor(Color.BLACK);
-                    mostrarFinal=txtApellidos.getText()+", "+txtNombre.getText()+", Edad = "+txtEdad.getText()+", "+estadoSpinner+mayoriaedad+", "+genero+", "+tienehijos+"";
+                    mostrarFinal = txtApellidos.getText() + ", " + txtNombre.getText() + ", Edad = " + txtEdad.getText() + ", " + estadoSpinner + mayoriaedad + ", " + genero + ", " + tienehijos + "";
                     txtView.setText(mostrarFinal);
                 }
             }
         });
-    }
 
-    ;
+        final Button btnBoton2 = (Button) findViewById(R.id.button2);
+        btnBoton2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                txtNombre.setText("");
+                txtApellidos.setText("");
+                txtEdad.setText("");
+                radioHombre.setChecked(false);
+                radioMujer.setChecked(false);
+                spinner.setSelection(0);
+                SwitchHijos.setChecked(false);
+            }
+        })
+
+        ;
+    }
 }
 
 

@@ -74,7 +74,7 @@
         android:layout_marginTop="364dp"
         android:layout_marginEnd="116dp"
         android:layout_marginRight="116dp"
-        android:text="Generar Texto"
+        android:text="@string/btngenerartexto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -84,7 +84,7 @@
         android:layout_height="42dp"
         android:layout_marginTop="440dp"
         android:maxLines="5"
-        android:text="Aquí se mostrará el texto"
+        android:text="@string/textView1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,7 +95,7 @@
         android:layout_marginTop="484dp"
         android:layout_marginEnd="136dp"
         android:layout_marginRight="136dp"
-        android:text="Resetear"
+        android:text="@string/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -113,13 +113,13 @@
             android:id="@+id/radioButtonHombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hombre" />
+            android:text="@string/radioButtonHombre" />
 
         <RadioButton
             android:id="@+id/radioButtonMujer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mujer" />
+            android:text="@string/radioButtonMujer" />
     </RadioGroup>
 
 
