@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Personal Data</string>
+    <string name="Casado">Married</string>
+    <string name="Otro">Other</string>
+    <string name="Separado">Separated</string>
+    <string name="Viudo">Widower</string>
+    <string name="btngenerartexto">Generate Text</string>
+    <string name="button2">Reset</string>
+    <string name="radioButtonHombre">Men</string>
+    <string name="radioButtonMujer">Woman</string>
+    <string name="spinner">Table</string>
+    <string name="switch1">Has sons?</string>
+    <string name="textView1">Here the text will be shown</string>
+    <string name="txtApellidos1">Type your last name</string>
+    <string name="txtEdad1">Type your age</string>
+    <string name="txtNombre1">Type your name</string>
+</resources>

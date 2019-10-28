@@ -1,23 +1,23 @@
 <resources>
-    <string name="app_name" translatable="false">Datos personales</string>
-    <string name="txtNombre1" translatable="false">Escribe tu nombre</string>
-    <string name="txtApellidos1" translatable="false">Escribe tu apellido</string>
-    <string name="txtEdad1" translatable="false">Escribe tu edad</string>
-    <string name="radioButtonMujer" translatable="false">Mujer</string>
-    <string name="radioButtonHombre" translatable="false">Hombre</string>
-    <string name="spinner" translatable="false">Tabla</string>
-    <string name="Casado" translatable="false">Casado</string>
-    <string name="Separado" translatable="false">Separado</string>
-    <string name="Viudo" translatable="false">Viudo</string>
-    <string name="Otro" translatable="false">Otro</string>
+    <string name="app_name">Datos personales</string>
+    <string name="txtNombre1">Escribe tu nombre</string>
+    <string name="txtApellidos1">Escribe tu apellido</string>
+    <string name="txtEdad1">Escribe tu edad</string>
+    <string name="radioButtonMujer">Mujer</string>
+    <string name="radioButtonHombre">Hombre</string>
+    <string name="spinner">Tabla</string>
+    <string name="Casado">Casado</string>
+    <string name="Separado">Separado</string>
+    <string name="Viudo">Viudo</string>
+    <string name="Otro">Otro</string>
     <string-array name="spinner2">
         <item>@string/Casado</item>
         <item>@string/Separado</item>
         <item>@string/Viudo</item>
         <item>@string/Otro</item>
     </string-array>
-    <string name="switch1" translatable="false">¿Tiene hijos?</string>
-    <string name="btngenerartexto" translatable="false">Generar Texto</string>
-    <string name="textView1" translatable="false">Aquí se mostrará el texto</string>
-    <string name="button2" translatable="false">Resetear</string>
+    <string name="switch1">¿Tiene hijos?</string>
+    <string name="btngenerartexto">Generar Texto</string>
+    <string name="textView1">Aquí se mostrará el texto</string>
+    <string name="button2">Resetear</string>
 </resources>
