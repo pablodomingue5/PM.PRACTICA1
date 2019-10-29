@@ -61,9 +61,8 @@ public class MainActivity extends AppCompatActivity {
                 apellidosVacio=false;
                 edadVacio=false;
 
-
                 if (txtApellidos.getText().toString().isEmpty()) {
-                    apellidosVacio = true;
+                    apellidosVacio=true;
                 } else {
                     apellidos = txtApellidos.getText().toString();
                 }
@@ -95,13 +94,11 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     tienehijos = "No tiene hijos";
                 }
-                if (apellidosVacio == true && edadVacio == true && nombreVacio == true) {
-                    mostrarFinal="El nombre , el apellido y la edad están vacíos";
-                    txtView.setTextColor(Color.RED);
-                    txtView.setText(mostrarFinal);
-                }
+                System.out.println(nombreVacio+""+apellidosVacio+""+edadVacio+"");
+
+
                     if (nombreVacio == true) {
-                        mostrarFinal="El nombre está vacío";
+                        mostrarFinal = "El nombre está vacío";
                         txtView.setTextColor(Color.RED);
                         txtView.setText(mostrarFinal);
                     }
@@ -115,11 +112,7 @@ public class MainActivity extends AppCompatActivity {
                         txtView.setTextColor(Color.RED);
                         txtView.setText(mostrarFinal);
                     }
-                    if (apellidosVacio == true && edadVacio == true && nombreVacio == true) {
-                        mostrarFinal="El nombre,el apellido y la edad están vacíos";
-                        txtView.setTextColor(Color.RED);
-                        txtView.setText(mostrarFinal);
-                    }
+
                     if (nombreVacio == true && apellidosVacio == true) {
                         mostrarFinal = "El nombre y el apellido están vacíos";
                         txtView.setTextColor(Color.RED);
@@ -135,10 +128,17 @@ public class MainActivity extends AppCompatActivity {
                         txtView.setTextColor(Color.RED);
                         txtView.setText(mostrarFinal);
                     }
-                    if(nombreVacio==false && apellidosVacio == false && edadVacio == false){
-                    txtView.setTextColor(Color.BLACK);
-                    mostrarFinal = txtApellidos.getText() + ", " + txtNombre.getText() + ", Edad = " + txtEdad.getText() + ", " + estadoSpinner + mayoriaedad + ", " + genero + ", " + tienehijos + "";
-                    txtView.setText(mostrarFinal);}
+                        if (apellidosVacio == true && edadVacio == true && nombreVacio == true) {
+                         mostrarFinal = "El nombre, apellidos y la edad están vacíos";
+                        txtView.setTextColor(Color.RED);
+                        txtView.setText(mostrarFinal);
+                        }
+                    if (nombreVacio == false && apellidosVacio == false && edadVacio == false) {
+                        txtView.setTextColor(Color.BLACK);
+                        mostrarFinal = txtApellidos.getText() + ", " + txtNombre.getText() + ", Edad = " + txtEdad.getText() + ", " + estadoSpinner + mayoriaedad + ", " + genero + ", " + tienehijos + "";
+                        txtView.setText(mostrarFinal);
+                    }
+
 
             }
         });
@@ -154,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
                 spinner.setSelection(0);
                 SwitchHijos.setChecked(false);
                 mostrarFinal="Aquí se mostrará el texto";
+                txtView.setTextColor(Color.BLACK);
                 txtView.setText(mostrarFinal);
             }
         })

@@ -18,6 +18,6 @@
     </string-array>
     <string name="switch1">¿Tiene hijos?</string>
     <string name="btngenerartexto">Generar Texto</string>
-    <string name="textView1">Aquí se mostrará el texto</string>
+    <string name="textView1">     Aquí se mostrará el texto</string>
     <string name="button2">Resetear</string>
 </resources>
