@@ -3,6 +3,7 @@ package com.example.practica1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
@@ -20,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     boolean nombreVacio = false;
     boolean apellidosVacio = false;
     boolean edadVacio = false;
-
 
     String nombre;
     String apellidos;
@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         final EditText txtNombre = (EditText) findViewById(R.id.txtNombre1);
         final EditText txtApellidos = (EditText) findViewById(R.id.txtApellidos1);
         final EditText txtEdad = (EditText) findViewById(R.id.txtEdad1);
-        // Editable nombrefinal = txtNombre.getText();
         //Parte de RadioButtons
         final RadioButton radioHombre = findViewById(R.id.radioButtonHombre);
         final RadioButton radioMujer = findViewById(R.id.radioButtonMujer);
@@ -99,23 +98,43 @@ public class MainActivity extends AppCompatActivity {
 
                     if (nombreVacio == true) {
                         mostrarFinal = "El nombre está vacío";
-                        txtView.setTextColor(Color.RED);
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                            txtView.setTextColor(getColor(R.color.colorAccent));
+                        }else
+                        {
+                            txtView.setTextColor(Color.RED);
+                        }
                         txtView.setText(mostrarFinal);
                     }
                     if (apellidosVacio == true) {
                         mostrarFinal = "El apellido está vacío";
-                        txtView.setTextColor(Color.RED);
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                            txtView.setTextColor(getColor(R.color.colorAccent));
+                        }else
+                        {
+                            txtView.setTextColor(Color.RED);
+                        }
                         txtView.setText(mostrarFinal);
                     }
                     if (edadVacio == true) {
                         mostrarFinal = "La edad está vacía";
-                        txtView.setTextColor(Color.RED);
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                            txtView.setTextColor(getColor(R.color.colorAccent));
+                        }else
+                        {
+                            txtView.setTextColor(Color.RED);
+                        }
                         txtView.setText(mostrarFinal);
                     }
 
                     if (nombreVacio == true && apellidosVacio == true) {
                         mostrarFinal = "El nombre y el apellido están vacíos";
-                        txtView.setTextColor(Color.RED);
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                            txtView.setTextColor(getColor(R.color.colorAccent));
+                        }else
+                        {
+                            txtView.setTextColor(Color.RED);
+                        }
                         txtView.setText(mostrarFinal);
                     }
                     if (nombreVacio == true && edadVacio == true) {
@@ -125,12 +144,22 @@ public class MainActivity extends AppCompatActivity {
                     }
                     if (apellidosVacio == true && edadVacio == true) {
                         mostrarFinal = "Los apellidos y la edad están vacíos";
-                        txtView.setTextColor(Color.RED);
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                            txtView.setTextColor(getColor(R.color.colorAccent));
+                        }else
+                        {
+                            txtView.setTextColor(Color.RED);
+                        }
                         txtView.setText(mostrarFinal);
                     }
                         if (apellidosVacio == true && edadVacio == true && nombreVacio == true) {
                          mostrarFinal = "El nombre, apellidos y la edad están vacíos";
-                        txtView.setTextColor(Color.RED);
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                                txtView.setTextColor(getColor(R.color.colorAccent));
+                            }else
+                            {
+                                txtView.setTextColor(Color.RED);
+                            }
                         txtView.setText(mostrarFinal);
                         }
                     if (nombreVacio == false && apellidosVacio == false && edadVacio == false) {
