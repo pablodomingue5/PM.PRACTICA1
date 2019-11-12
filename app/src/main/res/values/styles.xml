@@ -98,4 +98,94 @@
         <item name="android:layout_marginRight">136dp</item>
     </style>
 
+    <style name="SwitchLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">68dp</item>
+        <item name="android:layout_marginEnd">100dp</item>
+        <item name="android:layout_marginRight">100dp</item>
+    </style>
+
+    <style name="RadioGroupLando">
+        <item name="android:layout_width">191dp</item>
+        <item name="android:layout_height">49dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">44dp</item>
+        <item name="android:layout_marginRight">44dp</item>
+    </style>
+
+    <style name="RbHombreLand">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <style name="RbMujerLand">
+        <item name="android:layout_width">210dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SpinnerLand3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">232dp</item>
+        <item name="android:layout_marginEnd">460dp</item>
+        <item name="android:layout_marginRight">460dp</item>
+    </style>
+
+    <style name="BtnGenerarTextoLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">116dp</item>
+        <item name="android:layout_marginEnd">108dp</item>
+        <item name="android:layout_marginRight">108dp</item>
+    </style>
+
+    <style name="TxtNombreLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginEnd">408dp</item>
+        <item name="android:layout_marginRight">408dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="TxtApellidosLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">76dp</item>
+        <item name="android:layout_marginEnd">408dp</item>
+        <item name="android:layout_marginRight">408dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="TxtEdadLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">132dp</item>
+        <item name="android:layout_marginEnd">408dp</item>
+        <item name="android:layout_marginRight">408dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">3</item>
+    </style>
+
+    <style name="TxtViewResultadoLand">
+        <item name="android:layout_width">222dp</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:layout_marginTop">176dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:maxLines">5</item>
+    </style>
+
+    <style name="BtnResetearLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">240dp</item>
+        <item name="android:layout_marginEnd">116dp</item>
+        <item name="android:layout_marginRight">116dp</item>
+    </style>
+
 </resources>
