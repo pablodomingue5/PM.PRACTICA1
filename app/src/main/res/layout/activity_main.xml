@@ -71,6 +71,8 @@ tools:context=".MainActivity"
     android:text="@string/textView1"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toTopOf="parent"
+    android:textSize="17dp"
+    android:fontFamily="@font/madame"
     style="@style/TextViewResultado" />
 
 <Button

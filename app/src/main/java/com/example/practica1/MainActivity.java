@@ -4,6 +4,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
     String mostrarFinal = "";
     String mayoriaedad = "";
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         final Switch SwitchHijos = (Switch) findViewById(R.id.switch1);
         //TextView FINAL
         final TextView txtView = (TextView) findViewById(R.id.textView1);
+
 
         final Button btnBoton1 = (Button) findViewById(R.id.btngenerartexto);
         btnBoton1.setOnClickListener(new View.OnClickListener() {
