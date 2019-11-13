@@ -1,5 +1,6 @@
 package com.example.practica1;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
@@ -174,6 +175,7 @@ public class MainActivity extends AppCompatActivity {
 
         final Button btnBoton2 = (Button) findViewById(R.id.button2);
         btnBoton2.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
             public void onClick(View arg0) {
                 txtNombre.setText("");
                 txtApellidos.setText("");
@@ -183,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
                 spinner.setSelection(0);
                 SwitchHijos.setChecked(false);
                 mostrarFinal="Aquí se mostrará el texto";
-                txtView.setTextColor(Color.BLACK);
+                txtView.setTextColor(getColor(R.color.colorParaTexto));
                 txtView.setText(mostrarFinal);
             }
         })
